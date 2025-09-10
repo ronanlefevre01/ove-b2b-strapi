@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shop_frame_specs",
+  "info": {
+    "displayName": "frame-specs"
+  },
+  "options": {},
+  "attributes": {
+    "eye": {
+      "type": "integer"
+    },
+    "bridge": {
+      "type": "integer"
+    },
+    "temple": {
+      "type": "integer"
+    },
+    "material": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women"
+      ]
+    }
+  },
+  "config": {}
+}

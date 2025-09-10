@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shop_price_tiers",
+  "info": {
+    "displayName": "price-tier"
+  },
+  "options": {},
+  "attributes": {
+    "tierName": {
+      "type": "enumeration",
+      "enum": [
+        "Starter",
+        "Pro",
+        "Premium",
+        "ALaCarte"
+      ]
+    },
+    "minQty": {
+      "type": "integer"
+    },
+    "priceHT": {
+      "type": "decimal"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_deposits",
+  "info": {
+    "displayName": "deposit"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "cta": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

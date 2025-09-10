@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "frame",
+        "accessory"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "product"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "attributes": {
+      "type": "component",
+      "component": "shop.frame-specs",
+      "repeatable": false
+    },
+    "variants": {
+      "type": "component",
+      "component": "shop.variant",
+      "repeatable": true
+    },
+    "priceTiers": {
+      "type": "component",
+      "component": "shop.price-tier",
+      "repeatable": true
+    },
+    "isDepositEligible": {
+      "type": "boolean",
+      "default": false
+    },
+    "newIn": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

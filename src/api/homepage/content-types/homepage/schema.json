@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "blocks.hero",
+      "repeatable": false
+    },
+    "advantages": {
+      "type": "component",
+      "component": "blocks.advantage",
+      "repeatable": true
+    },
+    "deposit": {
+      "type": "component",
+      "component": "blocks.deposit",
+      "repeatable": false
+    },
+    "lead": {
+      "type": "component",
+      "component": "blocks.lead",
+      "repeatable": false
+    },
+    "apps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::app.app"
+    },
+    "seo": {
+      "type": "component",
+      "component": "common.seo",
+      "repeatable": false
+    },
+    "linkedApps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::app.app"
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "pitch": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "catalogue": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

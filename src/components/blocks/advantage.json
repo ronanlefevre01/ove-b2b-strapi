@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_advantages",
+  "info": {
+    "displayName": "advantage"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Shield",
+        "Truck",
+        "Layers",
+        "ShoppingBag"
+      ]
+    },
+    "tittle": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

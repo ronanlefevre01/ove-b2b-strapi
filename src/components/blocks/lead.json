@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_blocks_leads",
+  "info": { "displayName": "Lead" },
+  "attributes": {
+    "title": { "type": "string" },
+    "text": { "type": "richtext" },
+    "placeholder": { "type": "string" },
+    "cta": { "type": "string" },
+    "bulletsTitle": { "type": "string" },
+    "bullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.bullet"
+    },
+    "legal": { "type": "richtext" }
+  }
+}

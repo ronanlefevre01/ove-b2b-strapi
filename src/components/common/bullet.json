@@ -1,0 +1,7 @@
+{
+  "collectionName": "components_common_bullets",
+  "info": { "displayName": "Bullet" },
+  "attributes": {
+    "text": { "type": "string", "required": true }
+  }
+}

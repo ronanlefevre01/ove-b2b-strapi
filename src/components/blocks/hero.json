@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_blocks_heroes",
+  "info": {
+    "displayName": "hero"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitleAccent": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "primaryCta": {
+      "type": "string"
+    },
+    "secondaryCta": {
+      "type": "string"
+    },
+    "rightBadge": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

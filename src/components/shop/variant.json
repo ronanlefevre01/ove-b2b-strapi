@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shop_variants",
+  "info": {
+    "displayName": "variant"
+  },
+  "options": {},
+  "attributes": {
+    "variantSku": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "stockQty": {
+      "type": "integer"
+    },
+    "variantStatus": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "draft",
+        "archived"
+      ]
+    }
+  },
+  "config": {}
+}
