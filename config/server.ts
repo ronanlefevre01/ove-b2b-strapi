@@ -1,7 +1,6 @@
 export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  app: {
-    keys: env.array('APP_KEYS'),
-  },
+  url: env('URL'),
+  app: { keys: env.array('APP_KEYS', ['dev1','dev2','dev3','dev4']) },
 });
