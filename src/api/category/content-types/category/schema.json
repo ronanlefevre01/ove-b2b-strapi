@@ -25,28 +25,36 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "order": {
       "type": "integer"
     },
     "type": {
       "type": "enumeration",
-      "enum": [
-        "frames",
-        "accessories"
-      ]
+      "enum": ["frames", "accessories"]
     },
+
+    
     "product": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "categories"
+    },
+
+    
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "parent"
     }
   }
 }
