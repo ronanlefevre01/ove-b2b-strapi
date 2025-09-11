@@ -1,33 +1,32 @@
 {
   "collectionName": "components_shop_variants",
   "info": {
-    "displayName": "variant"
+    "displayName": "Variant",
+    "description": "Variante produit : coloris, taille A/D, prix, EAN, stock, images"
   },
   "options": {},
   "attributes": {
-    "variantSku": {
-      "type": "string"
-    },
-    "color": {
-      "type": "string"
-    },
-    "size": {
-      "type": "string"
-    },
-    "ean": {
-      "type": "string"
-    },
-    "stockQty": {
-      "type": "integer"
-    },
-    "variantStatus": {
+    "sku": { "type": "string" },
+    "color_code": { "type": "string", "required": true },
+    "color_label": { "type": "string" },
+
+    "size_a": { "type": "integer", "min": 0 },
+    "size_d": { "type": "integer", "min": 0 },
+
+    "ean": { "type": "string" },
+    "stock": { "type": "integer" },
+
+    "status": {
       "type": "enumeration",
-      "enum": [
-        "active",
-        "draft",
-        "archived"
-      ]
-    }
-  },
-  "config": {}
+      "enum": ["active", "draft", "archived"],
+      "default": "active"
+    },
+
+    "price_ht": { "type": "decimal" },
+
+   
+    "image_urls": { "type": "json" }
+
+    
+  }
 }
